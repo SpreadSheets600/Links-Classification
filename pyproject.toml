@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linkrec"
+version = "0.1.0"
+description = "Link metadata extraction and categorization pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "aiohttp>=3.9",
+  "openai>=1.30",
+  "python-dotenv>=1.0",
+  "trafilatura>=1.8",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["config", "models", "utils", "fetcher", "classifier", "storage", "pipeline"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-asyncio>=0.23"]
