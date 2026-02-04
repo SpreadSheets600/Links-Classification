@@ -84,13 +84,6 @@ Environment variables (via `.env`):
 - `LINKREC_MAX_CONCURRENCY` default `8`
 - `LINKREC_TIMEOUT` default `12` seconds
 
-## Contributing
-
-- Read `AGENTS.md` for repository guidelines.
-- Keep changes small and focused; add or update tests in `tests/`.
-- Follow PEP 8 style with 4-space indentation and `snake_case` naming.
-- Include a short description of what changed and how to run tests.
-
 ## Minimal Example
 
 `links.md`:
